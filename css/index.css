@@ -145,6 +145,19 @@ p {
 	-webkit-filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.1));
 }
 
+.image-icon {
+	border-radius: 15px;
+}
+
+.download-button {
+	display: flex;
+	flex-direction: row
+}
+
+.button-image {
+	padding: 10px
+}
+
 .app-icon p {
 	font-size: 35px;
 	font-weight: 200;
