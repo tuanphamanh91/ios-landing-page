@@ -79,6 +79,11 @@ p {
 	.sep {
 		margin-top: 0;
 	}
+
+}
+
+.qrcode-image {
+	display: none;
 }
 
 .primary-btn {
@@ -205,8 +210,9 @@ p {
 
 .iphone {
 	position: relative;
-	max-width: 300px;
-	height: 300px;
+	max-width: 400px;
+	height: 600px;
+	min-height: 800px;
 	margin: 0 auto;
 	padding-bottom: 50px;
 }
@@ -303,6 +309,11 @@ p {
 	.contact a {
 		padding-right: 0;
 		padding-left: 12px;
+	}
+
+	.qrcode-image {
+		display: flex;
+		padding: 30px
 	}
 }
 
