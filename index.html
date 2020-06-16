@@ -1,58 +1,72 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="description" content="Awesome Unicorns">
-		<meta name="author" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="apple-itunes-app" content="app-id=994182280">
-		<meta property="og:url" content="https://yourwebsite.com">
-		<meta property="og:title" content="App Name">
-		<meta property="og:description" content="Awesome Unicorns">
-		<meta property="og:image" content="https://yourwebsite.com/promo-image.jpg">
-		<meta name="twitter:card" content="app">
-		<meta name="twitter:site" content="@twitterusername">
-		<meta name="twitter:description" content="Awesome Unicorns">
-		<meta name="twitter:app:name:iphone" content="App Name">
-		<meta name="twitter:app:id:iphone" content="994182280">
-		<title>App Name - Awesome Unicorns</title>
-		<link href="index.css" rel="stylesheet">
-	</head>
-	<body>
-		<header class="container">
-			<div class="responsive intro-container">
-				<div class="app-icon">
-					<img alt="App icon" src="app-icon.png">
-					<p>App</p>
-				</div>
-				<div class="intro">
-					<h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h2>
-				</div>
-				<a href='https://play.google.com/store/apps/details?id=com.haki.tft2&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' style="width:135px;height:40px;"> <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
-				<a href="https://apps.apple.com/us/app/c%E1%BB%91c-c%E1%BB%91c-browser/id1170593919?mt=8" style="display:inline-block;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2016-12-02&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"></a>				
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Awesome Unicorns">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-itunes-app" content="app-id=994182280">
+	<meta property="og:url" content="https://yourwebsite.com">
+	<meta property="og:title" content="App Name">
+	<meta property="og:description" content="Awesome Unicorns">
+	<meta property="og:image" content="https://yourwebsite.com/promo-image.jpg">
+	<meta name="twitter:card" content="app">
+	<meta name="twitter:site" content="@twitterusername">
+	<meta name="twitter:description" content="Awesome Unicorns">
+	<meta name="twitter:app:name:iphone" content="App Name">
+	<meta name="twitter:app:id:iphone" content="994182280">
+	<title>App Name - Awesome Unicorns</title>
+	<link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+	<header class="container">
+		<div class="responsive intro-container">
+			<div class="app-icon">
+				<img class="image-icon" alt="App icon" src="images/icon.jpg">
+				<p style="text-align: center;">TFT Widget Guide</p>
 			</div>
-			<div class="responsive iphone">
-				<div class="iphone-screenshot">
-					<img src="app-screenshot.png" alt="App screenshot">
+			<div class="intro">
+				<h2>An amazing game guide for TFT Teamfight Tactics</h2>
+			</div>
+			<div class="download-button">
+				<div class="button-image">
+					<a target="_blank"
+						href='https://play.google.com/store/apps/details?id=com.haki.tft2&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+						<img alt='Get it on Google Play' class="image-button" src='images/play-store.png' /></a>
 				</div>
-				<img class="iphone-mask" src="iphone.png">
+				<div class="button-image">
+					<a target="_blank" href="https://apps.apple.com/us/app/c%E1%BB%91c-c%E1%BB%91c-browser/id1170593919?mt=8">
+					<img alt='apple' class="image-button" src='images/apple.png' /></a>
+				</div>
 			</div>
-		</header>
-		<footer class="container footer">
-			<div class="sep"></div>
-			<p class="responsive credit">Made with ♥ by <a href="https://twitter.com/twitterusername">Your Name</a></p>
-			<div class="responsive contact">
-				<a href="mailto:youremail@gmail.com?subject=App Name">Support</a>
-				<a href="">Press Kit</a>
+		</div>
+		<div class="responsive iphone">
+			<div class="iphone-screenshot">
+				<img src="images/in-app.jpg" alt="App screenshot">
 			</div>
-		</footer>
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-			ga('create', 'UA-XXXXXXXX-XX', 'auto');
-			ga('send', 'pageview');
-		</script>
-	</body>
+			<img class="iphone-mask" src="images/iphone.png">
+		</div>
+	</header>
+	<footer class="container footer">
+		<div class="sep"></div>
+		<p class="responsive credit">Made with ♥ by <a href="https://twitter.com/twitterusername">Your Name</a></p>
+		<div class="responsive contact">
+			<a href="mailto:youremail@gmail.com?subject=App Name">Support</a>
+			<a href="">Press Kit</a>
+		</div>
+	</footer>
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+		ga('create', 'UA-XXXXXXXX-XX', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+
 </html>
