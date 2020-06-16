@@ -1,0 +1,13 @@
+{
+    "name": "landingpage",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+    },
+    "devDependencies": {
+    },
+    "scripts": {
+      "deployS3": "aws --profile tuanpa s3 sync ./ s3://otironet --exclude '.git/*' --exclude '.gitattributes' --exclude '.editorconfig'"
+    }
+  }
+  
