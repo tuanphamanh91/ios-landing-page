@@ -305,3 +305,10 @@ p {
 		padding-left: 12px;
 	}
 }
+
+
+.app-name {
+	margin-top: 10px;
+	font-size: 28px;
+	font-weight: 400
+}
