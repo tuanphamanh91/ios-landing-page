@@ -19,33 +19,6 @@
 	<title>TFT Widget Guide</title>
 	<link href="css/index.css" rel="stylesheet">
 	<link rel="shortcut icon" href="images/favicon.jpg">
-	<script>
-		function isAndroidDevice() {
-			return /Android/i.test(navigator.userAgent);
-		}
-
-		function isiOSDevice() {
-			// return /iPhone|iPad/i.test(navigator.userAgent);
-			const ua = navigator.userAgent.toLowerCase();
-			const isiOS =
-				ua.indexOf("ipod") > -1 ||
-				ua.indexOf("iphone") > -1 ||
-				ua.indexOf("ipad") > -1 ||
-				(ua.indexOf("macintosh") > -1 && "ontouchend" in document);
-			return isiOS;
-		}
-		function redirect_url() {
-			if (isAndroidDevice()) {
-				// Android
-				window.location.href="https://play.google.com/store/apps/details?id=com.haki.tft2"
-			} else {
-				// IOs
-				window.location.href="https://apps.apple.com/app/id1503989358"
-			}
-		}
-
-		redirect_url();
-	</script>
 </head>
 
 <body>
