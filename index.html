@@ -19,6 +19,33 @@
 	<title>TFT Widget Guide</title>
 	<link href="css/index.css" rel="stylesheet">
 	<link rel="shortcut icon" href="images/favicon.jpg">
+	<script>
+		function isAndroidDevice() {
+			return /Android/i.test(navigator.userAgent);
+		}
+
+		function isiOSDevice() {
+			// return /iPhone|iPad/i.test(navigator.userAgent);
+			const ua = navigator.userAgent.toLowerCase();
+			const isiOS =
+				ua.indexOf("ipod") > -1 ||
+				ua.indexOf("iphone") > -1 ||
+				ua.indexOf("ipad") > -1 ||
+				(ua.indexOf("macintosh") > -1 && "ontouchend" in document);
+			return isiOS;
+		}
+		function redirect_url() {
+			if (isAndroidDevice()) {
+				// Android
+				window.location.href="https://play.google.com/store/apps/details?id=com.haki.tft2"
+			} else {
+				// IOs
+				window.location.href="https://apps.apple.com/app/id1503989358"
+			}
+		}
+
+		redirect_url();
+	</script>
 </head>
 
 <body>
@@ -33,13 +60,12 @@
 			</div>
 			<div class="download-button">
 				<div class="button-image">
-					<a target="_blank"
-						href='https://play.google.com/store/apps/details?id=com.haki.tft2'>
+					<a target="_blank" href='https://play.google.com/store/apps/details?id=com.haki.tft2'>
 						<img alt='Get it on Google Play' class="image-button" src='images/play-store.png' /></a>
 				</div>
 				<div class="button-image">
 					<a target="_blank" href="https://apps.apple.com/app/id1503989358">
-					<img alt='Download on Apple Store' class="image-button" src='images/apple.png' /></a>
+						<img alt='Download on Apple Store' class="image-button" src='images/apple.png' /></a>
 				</div>
 			</div>
 			<div class="download-button">
@@ -50,7 +76,7 @@
 					<img alt='Download on Apple Store' class="image-button" src='images/qrcode_ios.png' /></a>
 				</div>
 			</div>
-			
+
 		</div>
 		<div class="responsive iphone">
 			<div class="iphone-screenshot">
@@ -58,11 +84,12 @@
 			</div>
 			<img class="iphone-mask" src="images/iphone.png">
 		</div>
-		
+
 	</header>
 	<footer class="container footer">
 		<div class="sep"></div>
-		<p class="responsive credit">Made with ♥ by <a href="https://www.facebook.com/TFT-Widget-Guide-100316718401110">Nuclear Man.</a></p>
+		<p class="responsive credit">Made with ♥ by <a
+				href="https://www.facebook.com/TFT-Widget-Guide-100316718401110">Nuclear Man.</a></p>
 		<div class="responsive contact">
 			<a href="mailto:nuclearman.apps@gmail.com?subject=TFT Widget Guide">Support</a>
 			<a href="">Press Kit</a>
